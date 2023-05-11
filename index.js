@@ -1,5 +1,8 @@
 var selectedTip = 0;
 
+document.getElementById("totalBillAmount").innerHTML = '₹ 0.00';
+document.getElementById("tipPerPerson").innerHTML    = '₹ 0.00';
+
 function setTipPercentage(tipPercentage){
     selectedTip = tipPercentage;
 }
@@ -52,8 +55,8 @@ function calculateTotal(){
     var tipPerPerson = tipAmount / people;
     var totalBill = (billAmount + tipAmount) / people;
 
-    document.getElementById("totalBillAmount").innerHTML = "₹" + totalBill.toFixed(2);
-    document.getElementById("tipPerPerson").innerHTML    = "₹" + tipPerPerson.toFixed(2);
+    document.getElementById("totalBillAmount").innerHTML = "₹ " + totalBill.toFixed(2);
+    document.getElementById("tipPerPerson").innerHTML    = "₹ " + tipPerPerson.toFixed(2);
 
     document.getElementById("billError").innerText = "";
     document.getElementById("tipError").innerText = "";

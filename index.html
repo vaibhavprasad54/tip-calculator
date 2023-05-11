@@ -62,7 +62,7 @@ input[type=number] {
 
   <section class="h-full sm:h-screen flex flex-col items-center justify-center relative">
     <div class="heading">
-      <h2 class="tracking-[10px] text-[#3f5e61] text-xl font-semibold mt-7 sm:mt-0"> SPLI <br /> TTER </h2>
+      <h2 class="tracking-[10px] text-[#3f5e61] text-xl font-semibold mt-8 sm:mt-0"> SPLI <br /> TTER </h2>
     </div>
     <div class="calculator-container px-2 -mt-4 sm:mt-0">
       <div class="calculator flex items-center justify-center flex-col sm:flex-row w-full mx-auto mt-10 bg-white py-10 sm:py-0 px-10 sm:px-7 rounded-[20px] shadow-xl">
@@ -101,30 +101,26 @@ input[type=number] {
         <div class="right flex items-center justify-center flex-col bg-[#00474b] w-full h-full px-6 pt-10 pb-7 m-8 sm:ml-8 sm:mr-0 sm:my-7 rounded-xl sm:w-[20rem]">
           <div class="amount w-full flex items-center justify-between">
             <h1 class="text-xs tracking-wide text-white font-semibold">Tip Amount <br /> <span class="text-[#689fa4] text-xs"> / person </span></h1>
-            <p id="tipPerPerson" class="bg-[#00474b] w-32 text-right border-0 outline-none text-3xl font-semibold text-[#30c6b2] break-words min-w-[10rem]"></p>
+            <p id="tipPerPerson" class="bg-[#00474b] w-32 text-right border-0 outline-none text-3xl font-semibold text-[#30c6b2] break-words min-w-[10rem]">  </p>
           </div>
           <div class="total w-full flex items-center justify-between mt-7">
             <h1 class="text-xs tracking-wide text-white font-semibold">Total <br /> <span class="text-[#689fa4] text-xs"> / person </span></h1>
-            <p id="totalBillAmount" class="bg-[#00474b] w-32 text-right border-0 outline-none text-3xl font-semibold text-[#30c6b2] break-words min-w-[10rem]"> </p>
+            <p id="totalBillAmount" class="bg-[#00474b] w-32 text-right border-0 outline-none text-3xl font-semibold text-[#30c6b2] break-words min-w-[10rem]">  </p>
           </div>
           <div class="reset w-full text-center mt-7 sm:mt-28 space-y-2">
-            <button onclick="reset()" class="bg-[#30c6b2] w-full py-2 sm:py-[10px] rounded-[4px] tracking-wide text-sm font-bold text-[#00484a] hover:bg-[#a1e7df] transition-colors duration-300">RESET</button>
+            <button onclick="reset()" id="resetBtn" class="bg-[#30c6b2] w-full py-2 sm:py-[10px] rounded-[4px] tracking-wide text-sm font-bold text-[#00484a] hover:bg-[#a1e7df] transition-colors duration-300">RESET</button>
           </div>
         </div>
       </div>
     </div>
 
 
-    <div id="attr" class="w-full flex items-center justify-center attribution tracking-wider text-xs relative">
-      <div class="absolute top-10 pb-5 sm:top-16 sm:pb-0 flex flex-col items-center justify-center">
-        <div>
-          <span class="text-[#00474b]">Challenge by</span> <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><span class="text-[#00474b] font-semibold">Frontend Mentor</span></a>. 
-          Coded by <a href="https://www.linkedin.com/in/vaibhav-prasad-495451166/" target="#"><span class="text-[#00474b] font-semibold">Vaibhav Prasad</span></a>.
-        </div>
+    <div id="attr" class="w-full flex items-center justify-center attribution tracking-wider text-xs pt-10">
+      <div class="flex flex-col items-center justify-center">
         <div>
           <a href="https://portfolio-seven-tau-18.vercel.app/" target="#" class="flex items-center justify-center py-1">
-            <p class="text-sky-600 font-semibold tracking-widest text-[14px]">Visit my Portfolio</p>
-            <i class="fa-solid fa-briefcase pt-[1.5px] text-sky-600 text-[14px] px-2"></i>
+            <p class="text-sky-600 font-semibold tracking-widest text-[12px] underline underline-offset-8 hover:text-sky-700">Visit my Portfolio</p>
+            <i class="fa-solid fa-briefcase pt-[1.5px] text-sky-600 text-[12px] px-2"></i>
           </a>
         </div>
       </div>
